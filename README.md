@@ -12,7 +12,7 @@ powershell backup from contextmenu with robocopy
 
 - will create directory with date&timestamp in destination dir and in there a dir with source dir name
 
-![a](screenshots/screen_rightfolder.jpg)
+![a](screenshots/screen_rightfolder.png)
 
 ![b](screenshots/screen_rightbackground.jpg)
 
