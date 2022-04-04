@@ -2,6 +2,21 @@
 # tail -f of Security Log
 # Inspired SilentBreakSecurity DSOPS 1 Course - (SilentBreakSecurity has since been acquired by NetSPI)
 
+# # for testing C# console app: create MySource EventSource in System:
+# if (!EventLog.SourceExists("MySource", "desktop-8if3bit"))
+# { 
+#     EventLog.CreateEventSource("MySource", "System", "desktop-8if3bit");
+#     Console.WriteLine("Exiting, execute the application a second time to use the source.");
+#     return;
+# }
+# EventLog myLog = new EventLog();
+# myLog.Source = "MySource";
+# myLog.WriteEntry("Writing to event log.");
+# Console.WriteLine("Message written to event log.");
+
+# add log entries with PowerShell:
+# Write-EventLog -LogName System -Source "MySource" -Message "hello System Eventlog" -EventId 2 -EntryType Error
+
 $ErrorActionPreference = "SilentlyContinue"
 
 Function Parse-Event {
